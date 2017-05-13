@@ -1,23 +1,16 @@
 {
-  "name": "reveal.js",
-  "version": "3.5.0",
+  "name": "TahoeJS-Open-Source-Presentation",
+  "version": "1.0.0",
   "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
-  "subdomain": "revealjs",
-  "main": "js/reveal.js",
   "scripts": {
-    "test": "grunt test",
-    "start": "grunt serve",
-    "build": "grunt"
+    "test": "./node_modules/.bin/grunt test",
+    "start": "./node_modules/.bin/grunt serve",
+    "build": "./node_modules/.bin/grunt"
   },
-  "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
-  },
+  "authors": ["Garrett McCullough", "Jordan Papaleo"],
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": ""
   },
   "engines": {
     "node": ">=4.0.0"

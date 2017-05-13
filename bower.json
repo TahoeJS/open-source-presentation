@@ -1,5 +1,5 @@
 {
-  "name": "reveal.js",
+  "name": "open source",
   "version": "3.5.0",
   "main": [
     "js/reveal.js",
@@ -8,9 +8,6 @@
   "homepage": "http://lab.hakim.se/reveal-js/",
   "license": "MIT",
   "description": "The HTML Presentation Framework",
-  "authors": [
-    "Hakim El Hattab <hakim.elhattab@gmail.com>"
-  ],
   "dependencies": {
     "headjs": "~1.0.3"
   },
