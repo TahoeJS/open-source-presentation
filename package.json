@@ -1,7 +1,7 @@
 {
   "name": "TahoeJS-Open-Source-Presentation",
   "version": "1.0.0",
-  "description": "The HTML Presentation Framework",
+  "description": "A presentation about why you should contribute and how you can get started with Open Source projects",
   "scripts": {
     "test": "./node_modules/.bin/grunt test",
     "start": "./node_modules/.bin/grunt serve",
@@ -10,7 +10,7 @@
   "authors": ["Garrett McCullough", "Jordan Papaleo"],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/TahoeJS/open-source-presentation.git"
   },
   "engines": {
     "node": ">=4.0.0"
