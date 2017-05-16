@@ -4,11 +4,13 @@
 
 ## Getting Started in Open Source
 
-Contributing to open source can be intimidating. Any code that you submit is open to the review and criticism of the project maintainers and the public.  
+Contributing to open source can be intimidating:
+- Any code that you submit is open to the review and criticism of the project maintainers and the public.  
+- You might be afraid that people in the project won't be nice
+   - Linus Torvalds is known for commenting on one pull request to the Linux kernel, "Christ people. This is just sh*t."
+- There are barriers to entry in learning what and how to do it
 
-And some communities are more welcoming than others. For example, Linus Torvalds is known for commenting on one pull request to the Linux kernel, "Christ people. This is just sh*t."  Other communities make a conscious effort to welcome new contributors and give them additional help and easy projects.
-
-### Tools
+### Tools to Get Started
 - npm
 - git & github
 - testing framework
@@ -32,7 +34,7 @@ I think there are benefits and drawbacks to choosing a small project vs. a large
 ### Making a First Commit
 Steps:
 1. fork the repo
-1. make a new branch
+   1. make a new branch, if you want to keep your changes out of the master version of your fork
 1. make your changes
 1. create any necessary tests for new code and make sure existing tests pass
 1. commit your code to your branch

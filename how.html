@@ -2,63 +2,292 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Getting Started in Open Source</title>
+	<title>Getting Started in Open Source</title>
 
-  <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
 
-  <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-  <!-- Printing and PDF exports -->
-  <script>
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-    document.getElementsByTagName('head')[0].appendChild(link);
-  </script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
 </head>
 
 <body>
-  <div class="reveal">
-    <div class="slides">
-      <section>Slide 1</section>
-      <section>Slide 2</section>
-    </div>
-  </div>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>How to Get Started</h2>
+				<aside class="notes">
+					Contributing to open source can be intimidating:
+					<ul>
+						<li>Any code that you submit is open to the review and criticism of the project maintainers and the public.
+						<li>You might be afraid that people in the project won't be nice
+							<ul>
+								<li>Linus Torvalds is known for commenting on one pull request to the Linux kernel, "Christ people. This is just sh*t."
+							</ul>
+						<li>There are barriers to entry in learning what and how to do it
+					</ul>
+				</aside>
+			</section>
+			<section>
+				<h3>Tools to Get Started</h3>
+				<ul>
+					<li class="fragment">npm
+					<li class="fragment">git & github
+					<li class="fragment">testing framework
+					<li class="fragment">node
+				</ul>
+				<aside class="notes">
+					The tools for open source are primarily the tools used by most modern developers. However, each community will be different. Many projects will require tests to be submitted with any pull request.
+				</aside>
+			</section>
+			<section>
+				<section>
+					<h3>Finding a Project</h3>
+				</section>
+				<section>
+					<h4>Choose a Project You Use on a Regular Basis</h4>
+					<aside class="notes">
+						<ul>
+							<li>if you don't, you may be capable of making documentation updates and simple bug fixes
+							<li>you won't have the context needed for making larger bug fixes, refactors and new features
+								<ul>
+									<li>open source projects are a community
+									<li>large changes are commonly discussed before they're implemented
+									<li>you won't know the roadmap for larger changes and features
+								</ul>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>Small Projects</h4>
+					<aside class="notes">
+						<ul>
+							<li>Small projects are often maintained by a few people at most.
+								<ul>
+									<li>maintainers may be happy to accept help
+									<li>but it may also mean that they're too busy to provide help
+								</ul>
+							<li>it's easier to wrap your head around the whole project.
+								<ul>
+									<li>this may mean that the maintainers already have a specific vision for the project.
+								</ul>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>Large Projects</h4>
+					<aside class="notes">
+						<ul>
+							<li>Large projects may be maintained by a large team of people
+								<ul>
+									<li>they have time to flag beginner issues and provide feedback
+									<li>may also mean that they're overwhelmed by pull requests
+								</ul>
+							<li>harder to understand the entirety of a large project
+								<ul>
+									<li>may be easier to find a small piece that you can work
+								</ul>
+							<li>large amounts of documentation to work on
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Making Your First Commit</h3>
+				</section>
+				<section>
+					<h4>fork the repo</h4>
+					<img src="./images/forking_repo.png" style="width: 50%" />
+					<aside class="notes">
+						You may want to make a new branch, if you want to keep your changes out of the master version of your fork
+					</aside>
+				</section>
+				<section>
+					<h4>make your changes</h4>
+					<img src="./images/code_change.png" style="width: 75%" />
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h4>create or fix tests</h4>
+					<aside class="notes">
+						create any necessary tests for new code and make sure existing tests pass
+					</aside>
+				</section>
+				<section>
+					<h4>commit your code</h4>
+					<img src="./images/commit_code.png" style="width: 100%" />
+					<aside class="notes">
+						<ul>
+							<li>if you only make one commit to your branch, the commit message should give a brief summary of the changes that you made
+							<li>if you make multiple commits to your branch, the project may ask you to use `git rebase` to collapse those commits into one commit that explains your contribution
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>create a pull request</h4>
+					<img src="./images/pull_request.png" style="width: 75%" />
+					<aside class="notes">
+						<ul>
+							<li>usually your PR will be against the master branch of the parent repo
+							<li>the project will probably ask that your PR contain a summary of your changes, tests, screenshots of any UI changes, etc
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>sign the Contributor License Agreement (CLA)</h4>
+					<aside class="notes">
+						A legal document, usually required by larger companies, that signs away rights to the code you contributed
+					</aside>
+				</section>
+			</section>
+			<section>
+				<h3>What to Expect Next</h3>
+				<img src="./images/waiting_for_merge.png" class="fragment" style="width: 75%" />
+				<aside class="notes">
+					<ul>
+						<li>Once you submit your pull request, it is up to the maintainers.
+						<li>automated tests
+							<ul>
+								<li>some of these may be private tests that you haven't seen
+							</ul>
+						<li>one or more code reviews
+						<li>your PR may be submitted to the larger community for comments
+						<li>if you don't hear anything, it is appropriate to ping the project maintainers after a reasonable amount of time
+					</ul>
+				</aside>
+			</section>
+			<section>
+				<section>
+					<h3>Growing as a Contributor</h3>
+					<aside class="notes">
+						One common path to growth seems to be
+					</aside>
+				</section>
+				<section>
+					<h4>documentation fixes or improvements</h4>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h4>minor bug fixes</h4>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h4>larger bug fixes or features</h4>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h4>ability to review pull requests and merge</h4>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h4>project maintainer</h4>
+					<h5 class="fragment">job developing open source</h5>
+					<h5 class="fragment">speaking or consulting</h5>
+					<h5 class="fragment">burnout</h5>
+					<aside class="notes">
+						Like any volunteer position, burnout is a possibility.  I think one of the keys to avoiding burnout is keeping a sane schedule for yourself.
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Resources</h3>
+				</section>
+				<section>
+					<h4>First Timers Only</h4>
+					<h5><a href="http://www.firsttimersonly.com/" target="_blank">http://www.firsttimersonly.com/</a></h5>
+					<aside class="notes">
+						<ul>
+							<li>Initiative by Scott Hanselman and Kent C. Dodds
+							<li>Built to encourage project owners to make it easy for first time contributors
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>How to Contribute to Open Source</h4>
+					<h5><a href="https://opensource.guide/how-to-contribute/" target="_blank">https://opensource.guide/how-to-contribute/</a></h5>
+					<aside class="notes">
+						<ul>
+							<li>very detailed guide about why and how
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>Up For Grabs</h4>
+					<h5><a href="http://up-for-grabs.net/" target="_blank">http://up-for-grabs.net/</a></h5>
+					<aside class="notes">
+						<ul>
+							<li>aggregates Github tags such as `jump in`, `up for grabs`, `beginner friendly` to try to surface projects that are actively looking for help
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>First Pull Request</h4>
+					<h5><a href="http://firstpr.me/" target="_blank">http://firstpr.me/</a></h5>
+					<img src="./images/gwmccull_first_pr.png" class="fragment" style="width: 75%"/>
+					<aside class="notes">
+						<ul>
+							<li>see the first PR that you ever made
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>Contributing to the Mozilla code base</h4>
+					<h5><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction" target="_blank">https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Introduction</a></h5>
+					<aside class="notes">
+						gives a different perspective than the web-based one
+					</aside>
+				</section>
+			</section>
+		</div>
+	</div>
 
-  <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-  <script>
-    // More info about config & dependencies:
-    // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
-    Reveal.initialize({
-      dependencies: [{
-          src: 'plugin/markdown/marked.js'
-        },
-        {
-          src: 'plugin/markdown/markdown.js'
-        },
-        {
-          src: 'plugin/notes/notes.js',
-          async: true
-        },
-        {
-          src: 'plugin/highlight/highlight.js',
-          async: true,
-          callback: function() {
-            hljs.initHighlightingOnLoad();
-          }
-        }
-      ]
-    });
-  </script>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function() {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
 </body>
 
 </html>
