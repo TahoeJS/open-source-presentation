@@ -4,8 +4,11 @@ This presentation is was written by [Garrett McCullough](https://github.com/gwmc
 
 It was built using [Reveal.js](https://github.com/hakimel/reveal.js).  To start the presentation from the command line:
 
+Requires node :)
+
 ```bash
 git clone git@github.com:TahoeJS/open-source-presentation.git
+cd open-source-presentation
 npm install
 npm start
 ```
